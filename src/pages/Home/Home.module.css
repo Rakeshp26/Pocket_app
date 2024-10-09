@@ -1,0 +1,41 @@
+.main {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    background: #DAE5F5;
+}
+.left {
+    max-width: 30vw;
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}
+.right {
+    max-width: 70vw;
+    max-height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+    overflow-y: auto;    
+    overflow-x: hidden;
+    position: relative;
+}
+.right::-webkit-scrollbar {
+    width: 10px; 
+  }
+  .right::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px; 
+  }
+  .right::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+  }
+@media (max-width:768px) {
+    .left {
+        min-width: 100vw;
+    }
+    .right{
+        display: none;
+    }
+}
